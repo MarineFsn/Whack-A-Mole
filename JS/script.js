@@ -30,8 +30,6 @@ function setGame() {
     setInterval(setJackson , 500);
 }
 
-setInterval (setUfo, 2000);
-setInterval (setUfo, 3000);
 
 function getRandomBox() {
     let num = Math.floor(Math.random()* 9);
