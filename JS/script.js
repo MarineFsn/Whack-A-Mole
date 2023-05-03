@@ -49,7 +49,7 @@ function setUfo() {
     ufo.src = "./Assets/alien.png"
 
     let num = getRandomBox();
-    if (ufoBoxes && jacksonboxes.id == num ) {
+    if (ufoBoxes && jacksonboxes.id == num) {
         return;
     }
     ufoBoxes = document.getElementById(num);
