@@ -34,7 +34,10 @@ function getRandomBox() {
 }
 
 function setUfo() {
-    
+
+    if  (gameOver) {
+        return;
+    }
     if(ufoBoxes) {
         ufoBoxes.innerHTML = "";
     }
@@ -51,6 +54,10 @@ function setUfo() {
 }
 
 function setJackson() {
+
+    if  (gameOver) {
+        return;
+    }
      if(jacksonboxes){
         jacksonboxes.innerHTML="";
      }
@@ -59,14 +66,25 @@ function setJackson() {
      jackson.src ="./Assets/jack.png";
 
      let num = getRandomBox();
+     if (ufoBoxes && ufoBoxes.id == num) {
+        return;
+    }
      jacksonboxes = document.getElementById(num);
      jacksonboxes.append (jackson);
 
 }
 
 function selectbox () {
+if (gameOver) {
+    return;
+}
+
     if (this == ufoBoxes) {
-        score +- 10;
-        document.getElementById("score").innerHTML = score.toString ();
+        score += 10;
+        document.getElementById("score").innerText= score.toString ();
+    }
+    else if (this == jacksonboxes) {
+        document.getElementById("score").innerText= "GAME OVER:" + score.toString ();
+        gameOver = true;
     }
 }

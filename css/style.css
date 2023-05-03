@@ -51,4 +51,9 @@ body #gameBoard div {
   width: 80px;
   margin-bottom: 60px;
   margin-left: 20px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }/*# sourceMappingURL=style.css.map */
