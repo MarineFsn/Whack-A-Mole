@@ -7,4 +7,66 @@
 //If you'd like to spice things up, you can create an increasing difficulty by reducing the timeframe in which the mole appears, 
 //and by introducing random delay time between the mole apparition.
 
+let ufoBoxes;
+let jacksonboxes;
+let score = 0;
+let gameOver = false;
 
+window.onload = function() {
+    setGame();
+}
+//set up 9 div tags to create the game Board in HTML
+
+function setGame() {
+    for (let i = 0; i <9; i++) {
+        let boxes = document.createElement("div");
+        boxes.id = i.toString ();
+        boxes.addEventListener("click", selectbox);
+        document.getElementById("gameBoard").appendChild(boxes);
+    }
+    setInterval(setUfo, 1000);
+    setInterval(setJackson , 2000);
+}
+
+function getRandomBox() {
+    let num = Math.floor(Math.random()* 9);
+    return num.toString();
+}
+
+function setUfo() {
+    
+    if(ufoBoxes) {
+        ufoBoxes.innerHTML = "";
+    }
+     
+    let ufo = document.createElement ("img");
+    ufo.src = "./Assets/alien.png"
+
+    let num = getRandomBox();
+    if (ufoBoxes && jacksonboxes.id == num) {
+        return;
+    }
+    ufoBoxes = document.getElementById(num);
+    ufoBoxes.appendChild (ufo);
+}
+
+function setJackson() {
+     if(jacksonboxes){
+        jacksonboxes.innerHTML="";
+     }
+
+     let jackson = document.createElement ("img");
+     jackson.src ="./Assets/jack.png";
+
+     let num = getRandomBox();
+     jacksonboxes = document.getElementById(num);
+     jacksonboxes.append (jackson);
+
+}
+
+function selectbox () {
+    if (this == ufoBoxes) {
+        score +- 10;
+        document.getElementById("score").innerHTML = score.toString ();
+    }
+}
