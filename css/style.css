@@ -17,14 +17,6 @@ body {
 body h1 {
   margin: 0 auto;
 }
-body .start-btn {
-  max-height: 100px;
-  max-width: 100px;
-  font-family: "Happy Monkey", cursive;
-  font-weight: 600;
-  background-color: blanchedalmond;
-  border-radius: 15px;
-}
 body #score {
   margin: 0 auto;
 }
@@ -43,7 +35,6 @@ body #gameBoard div {
   height: 180px;
   background-image: url("../Assets/soucoupe.png");
   background-size: cover;
-  z-index: 1;
 }
 
 #gameBoard div img {
@@ -51,9 +42,4 @@ body #gameBoard div {
   width: 80px;
   margin-bottom: 60px;
   margin-left: 20px;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }/*# sourceMappingURL=style.css.map */

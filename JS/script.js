@@ -17,6 +17,7 @@ window.onload = function() {
 }
 //set up 9 div tags to create the game Board in HTML
 
+
 function setGame() {
     for (let i = 0; i <9; i++) {
         let boxes = document.createElement("div");
