@@ -30,8 +30,6 @@ function setGame() {
     setInterval(setJackson , 500);
 }
 
-setInterval (setUfo, 2000);
-setInterval (setUfo, 3000);
 
 function getRandomBox() {
     let num = Math.floor(Math.random()* 9);
@@ -51,7 +49,7 @@ function setUfo() {
     ufo.src = "./Assets/alien.png"
 
     let num = getRandomBox();
-    if (ufoBoxes && jacksonboxes.id == num ) {
+    if (ufoBoxes && jacksonboxes.id == num) {
         return;
     }
     ufoBoxes = document.getElementById(num);
