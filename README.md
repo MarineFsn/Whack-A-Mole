@@ -6,6 +6,8 @@
 
 Welcome to the Whack-A-Mole Clone Challenge! Get ready to step into the world of game development and build an entertaining Whack-A-Mole game. In this exercise, you'll be tasked with preventing mischievous creatures from popping up and scoring points by whacking them back into their hiding places. Let's unleash your creativity and coding skills to create a simple yet engaging gaming experience!
 
+<img src ="https://github.com/MarineFsn/Whack-A-Mole/blob/main/2023-08-18%20(3).png>
+
 ## 👨‍💻 Team Members
 
 | Collaborators        | Github                        |
