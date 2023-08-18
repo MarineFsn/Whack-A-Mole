@@ -24,7 +24,7 @@ Welcome to the Whack-A-Mole Clone Challenge! Get ready to step into the world of
 </p>
 <img src="https://img.shields.io/badge/Technos-HMTL5_/_SCSS_/_CSS3_/_JS_/_Git_-green?style=for-the-badge&logo=appveyor" alt="Badge Technologies" 
 
-# Key Features:
+<h2>Goals</h2>
 
 # Mole Madness:
 Design a game board using HTML and CSS with mole elements that pop up randomly.
